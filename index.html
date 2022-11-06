@@ -4,52 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon!</title>
-    <style>
-        body {
-            text-align: center;
-            color: rgb(180, 180, 180);
-            background-color: rgb(43, 43, 43);
-            margin: 15%;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            background-color: red;
-            padding: 1px;
-            border-radius: 10px;
-        }
-
-        a:hover {
-            background-color: white;
-            color: red;
-        }
-
-        .Hello {
-            font-size: 500%;
-            font-weight: bold;
-            background-color: rgb(97, 97, 97);
-        }
-
-        .ComingSoon {
-            font-size: 250%;
-            background-color: green;
-            color: greenyellow;
-        }
-
-        .Suiii {
-            font-size: 250%;
-            background-color: rgb(255, 0, 0);
-        }
-
-    </style>
+    <title>A Website xD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Hello">Hello!</div>
-    <br>
-    <div class="ComingSoon">Coming Soon!</div>
-    <br>
-    <div class="Suiii"><a href="https://www.youtube.com/watch?v=ajJNI2Yz3UY">Suiii</a></div>
+    <div class="header">
+        <nav id="navbar">
+            <img src="assets/logo.png" class="logo">
+            <ul id="menu">
+                <hr>
+                <a href="https://swalli-io.github.io/">Home</a>
+                <a href="https://www.youtube.com/watch?v=4Mh3vtI16G4">No 1</a>
+                <a href="https://www.youtube.com/watch?v=0thbiCKBB4s">No 2</a>
+                <a href="https://www.youtube.com/watch?v=v7kXoSeqayI">No 3</a>
+                <a href="https://www.youtube.com/watch?v=EqekSuj5HCo">No 4</a>
+            </ul>
+            <hr>
+        </nav>
+    </div>
+    <hr>
+
+    <p class="headline">Hello<br>
+        Welcome to my Website!<br>
+        Enjoy it &#128512<br>
+        More content is coming soon!
+        </p>
+    
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");   
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
