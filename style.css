@@ -1,0 +1,277 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url("assets/Poppins-Medium.ttf");
+}
+
+
+:root{
+    --standard-color: whitesmoke;
+    --activate-color: darkgrey;
+    --accent-color: rgb(3, 89, 187);
+    --accent-color2: rgb(157, 255, 0);
+    --darkaccent-color: rgb(5, 6, 20);
+    
+}
+
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--darkaccent-color);
+    font-family: 'SourceCodePro';
+}
+
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+
+body::-webkit-scrollbar-track{
+    background: var(--darkaccent-color);
+}
+
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+
+.main{
+    padding: 11.8% 40px;
+    padding-bottom: -0px;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+nav{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav a{
+    color: var(--activate-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+
+
+nav a:hover{
+    color: var(--standard-color);
+}
+
+
+nav a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--accent-color);;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+
+nav a:hover::after{
+    width: 100%;
+}
+
+
+h1{
+    font-size: 50px;
+    color: var(--standard-color);
+}
+
+
+h2{
+    font-size: 100px;
+    color: var(--standard-color);
+}
+
+
+.h2-small{
+    font-size: 80px;
+}
+
+
+.h2-small1{
+    font-size: 60px;
+}
+
+
+.h1-webdevelopment{
+    color: var(--accent-color);
+    background-color: var(--accent-color2);
+}
+
+.h1-webdevelopment:hover{
+    cursor: default;
+    background-color: var(--darkaccent-color);
+    transition: 150ms ease-out;
+}
+
+
+.h2-about_this_website{
+    color: var(--darkaccent-color);
+    
+}
+
+
+.h2-about_this_website1{
+    text-decoration: underline;
+    color: var(--accent-color2);
+}
+
+
+.h2-about_this_website2{
+
+    color: var(--accent-color);
+}
+
+
+.h2-about_this_website3{
+    background-color: var(--accent-color2);
+    color: var(--accent-color);
+}
+
+
+.arrow{
+    width: 500px;
+}
+
+
+.img-webdevelopment{
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+
+    max-width: 80vw;
+    max-height: 80vw;
+}
+
+
+.img-about_this_website{
+    width: 800px;
+    border-radius: 50px;
+}
+
+
+.arrow_down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+}
+
+
+.about_this_website {
+    padding: 100px 0;
+    background-color: var(--accent-color);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.connection{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--darkaccent-color);
+    border-radius: 50px;
+    margin-top: 100px;
+    
+}
+
+
+.gallery_raster_main{
+    padding: 100px 0;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: column;
+
+}
+
+
+footer{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+
+li{
+    list-style: none;
+}
+
+
+.headline_footer{
+    color: var(--accent-color2);
+}
+
+
+.links_footer{
+    text-decoration: none;
+    color: var(--activate-color);
+}
+
+
+.links_footer:hover{
+    text-decoration: underline;
+    color: var(--standard-color);
+}
+
+
+.copyright_footer{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--accent-color2);
+    color: var(--darkaccent-color);
+}
+
+
+.hr_footer hr{
+    background-color: var(--activate-color);    
+    border: 0;
+    height: 1px;
+}
+
+
+@media (max-width: 1900px){                                         /*for smartphone*/
+    .arrow{
+        width: 0;
+    }
+
+    .img-webdevelopment{
+        margin-top: 100px;
+    }
+}
