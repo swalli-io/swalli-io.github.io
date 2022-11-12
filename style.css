@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Poppins';
-    src: url("Poppins-Medium.ttf");
+    src: url("assets/Poppins-Medium.ttf");
 }
 
 
@@ -84,7 +84,7 @@ nav a::after{
     content: '';
     height: 2px;
     width: 0;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color);;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -98,13 +98,13 @@ nav a:hover::after{
 
 
 h1{
-    font-size: 50px;
+    font-size: 4vw;
     color: var(--standard-color);
 }
 
 
 h2{
-    font-size: 100px;
+    font-size: 6vw;
     color: var(--standard-color);
 }
 
@@ -115,7 +115,7 @@ h2{
 
 
 .h2-small1{
-    font-size: 60px;
+    font-size: 3vw;
 }
 
 
