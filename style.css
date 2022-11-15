@@ -219,12 +219,11 @@ h2{
 }
 
 
-footer{
-    padding: 40px;
+.footer_pc{
+    padding: 6vw;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-
 }
 
 
@@ -262,15 +261,4 @@ li{
     background-color: var(--activate-color);    
     border: 0;
     height: 1px;
-}
-
-
-@media (max-width: 1900px){                                         /*for smartphone*/
-    .arrow{
-        width: 0;
-    }
-
-    .img-webdevelopment{
-        margin-top: 100px;
-    }
 }
