@@ -1,0 +1,21 @@
+@keyframes arrow_down_colorswitch {
+    0%   {background-color: var(--accent-color);}
+    100% {background-color: var(--darkaccent-color);}
+  }
+
+  .arrow_down{
+    animation: arrow_down_colorswitch 5s linear 5s infinite alternate;
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.img-webdevelopment:hover {
+	animation: rotating 4s linear infinite;
+}
