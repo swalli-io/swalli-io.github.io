@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb{
     gap: 20%;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url('assets/webdevelopment.jpg');
+    background-image: url('webdevelopment.jpg');
 }
 
 
