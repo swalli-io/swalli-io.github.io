@@ -21,6 +21,11 @@
 }
 
 
+.h2-small_mobile, .h2-small1_mobile, .img-about_this_website_mobile, .about_this_website_mobile, .footer_mobile{
+    display: none;
+}
+
+
 body{
     background-color: var(--darkaccent-color);
 }
@@ -44,19 +49,15 @@ body::-webkit-scrollbar-thumb{
 
 .main{
     padding: 11.8% 40px;
-    padding-bottom: -0px;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    background-image: url('webdevelopment.jpg');
 }
 
 
 nav{
-    margin-top: 50px;
+    margin-top: 2vw;
     margin-left: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 
@@ -113,21 +114,13 @@ h2{
     font-size: 4vw;
 }
 
-
 .h2-small1{
     font-size: 3vw;
 }
 
-
 .h1-webdevelopment{
-    color: var(--accent-color);
-    background-color: var(--accent-color2);
-}
-
-.h1-webdevelopment:hover{
-    cursor: default;
-    background-color: var(--darkaccent-color);
-    transition: 150ms ease-out;
+    color: var(--accent-color2);
+    font-size: 8vw;
 }
 
 
@@ -144,7 +137,6 @@ h2{
 
 
 .h2-about_this_website2{
-
     color: var(--accent-color);
 }
 
@@ -154,35 +146,17 @@ h2{
     color: var(--accent-color);
 }
 
-
-.arrow{
-    width: 500px;
-}
-
-
-.img-webdevelopment{
-    width: 600px;
-    height: 600px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 5px solid var(--accent-color);
-
-    max-width: 80vw;
-    max-height: 80vw;
-}
-
-
 .img-about_this_website{
     width: 40vw;
     border-radius: 50px;
 }
-
 
 .arrow_down{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--accent-color);
+    margin-top: 2vw;
 }
 
 
@@ -195,29 +169,15 @@ h2{
 
 
 .connection{
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--darkaccent-color);
     border-radius: 50px;
-    margin-top: 100px;
-    
+    margin-top: 100px;  
 }
-
-
-.gallery_raster_main{
-    padding: 100px 0;
-    background-color: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    grid-auto-rows: 200px;
-    grid-auto-flow: column;
-
-}
-
 
 .footer_pc{
     padding: 6vw;
@@ -251,14 +211,9 @@ li{
 
 .copyright_footer{
     text-align: center;
-    padding: 10px;
+    padding: 1vw;
     background-color: var(--accent-color2);
     color: var(--darkaccent-color);
 }
 
 
-.hr_footer hr{
-    background-color: var(--activate-color);    
-    border: 0;
-    height: 1px;
-}
