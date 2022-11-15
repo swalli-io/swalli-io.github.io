@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Poppins';
-    src: url("assets/Poppins-Medium.ttf");
+    src: url("Poppins-Medium.ttf");
 }
 
 
@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb{
     gap: 20%;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url('assets/webdevelopment.jpg');
+    background-image: url('webdevelopment.jpg');
 }
 
 
