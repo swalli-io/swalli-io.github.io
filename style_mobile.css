@@ -1,14 +1,3 @@
-@media (min-width:641px){
-    .navigation, .arrow_down, .connection, .footer_pc{
-        display: none;
-    } 
-    
-    .h2-small_mobile, .h2-small1_mobile, .img-about_this_website_mobile, .about_this_website_mobile, .footer_mobile{
-    display: block;
-    }
-}
-
-
 .h2-small_mobile{
     font-size: 5vw;
     background-color: var(--darkaccent-color);
