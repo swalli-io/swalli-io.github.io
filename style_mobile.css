@@ -1,4 +1,4 @@
-@media (max-width: 800px){
+@media (min-width:641px){
     .navigation, .arrow_down, .connection, .footer_pc{
         display: none;
     } 
