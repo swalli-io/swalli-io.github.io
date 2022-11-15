@@ -1,8 +1,0 @@
-@keyframes arrow_down_colorswitch {
-    0%   {background-color: var(--accent-color);}
-    100% {background-color: var(--darkaccent-color);}
-  }
-
-  .arrow_down{
-    animation: arrow_down_colorswitch 5s linear 5s infinite alternate;
-}
