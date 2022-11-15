@@ -232,7 +232,7 @@ li{
     color: var(--darkaccent-color);
 }
 
-@media (min-width:641px){
+@media (max-width:1800px){
     .navigation, .arrow_down, .connection, .footer_pc{
         display: none;
     } 
